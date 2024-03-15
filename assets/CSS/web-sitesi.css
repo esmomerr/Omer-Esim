@@ -1,0 +1,429 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Space Grotesk;
+    background: black;
+    color: white;
+
+    /* background-image: url(../img/ovaller.svg), url(../img/Oval.svg);
+    background-position: 325px 150px, 930px 600px;
+    background-repeat: no-repeat, no-repeat, no-repeat; */
+}
+
+a{text-decoration: none;}
+li{list-style-type: none;}
+
+.container{
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    padding-block: 39px;
+}
+
+/* Header */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-h4{
+    font-weight: 700;
+    font-size: 32px;
+}
+.header-h4:hover{color: #4EE1A0;}
+
+.items{
+    display: flex;
+    gap: 22px;
+    margin-right: 30px;
+}
+
+.item{
+    padding: 10px;
+}
+/* Header End*/
+
+
+/* My Blog Post */
+.desktop-hidden{display: block;}
+.desktop-visible{display: none;}
+
+.my-blog-post{
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+}
+
+.omer-esin-photo{
+    position: absolute;
+    max-width: 332px;
+    max-height: 600px;
+    top: -130px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.my-blog-header{
+    position: absolute;
+    top: 350px;
+}
+
+.my-blog-header-h1{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -2.05px;
+
+}
+
+/* .my-blog-text{
+    margin: 60px 500px 0 0;
+    color: #FFFFFF;
+} */
+
+.my-blog-header-mobile{
+    text-align: center;
+}
+/* My Blog Post End*/
+
+/* Experience */
+.experinces{
+    margin-top: 600px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+    padding-inline: 16px;
+    padding-block: 40px;
+}
+
+.experince{
+    text-align: center;
+}
+
+.experices-header{
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.experices-span{
+    font-weight: 500;
+    font-size: 16px;
+    color: #D9D9D9;
+}
+/* Experience End*/
+
+
+/* Projects */
+/* Projects End*/
+
+
+/* Contact */
+.contact-container{
+    background: #242424;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* column-gap: 220px; */
+    row-gap: 50px;
+    border-bottom: 1px solid white;
+    padding-bottom: 87px;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    text-align: center;
+}
+
+.contact-header{
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -1.14px;
+}
+
+.contact-paragraph{
+    font-weight: 500;
+    font-size: 16px;
+    color: #D9D9D9;
+}
+.contact-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.inpt{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: #FFFFFF;
+    width: 343px;
+    height: 43px;
+}
+
+/* inputta yanlış girildiğinde border etrafı kırmızı yanıcak */
+.inpt:invalid{
+    border-color: red;
+}
+
+.message{
+    height: 107px;
+}
+
+.submit-btn{
+    border: none;
+    border-bottom: 2px solid #4EE1A0;
+    background: transparent;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2.29px;
+    padding-bottom: 10px;
+    margin-left: 199px;
+}
+
+.submit-btn:active{color: #4EE1A0;}
+.submit-btn:hover{color: #4EE1A0;}
+
+footer{
+    margin-block: 47px;
+}
+/* Contact End */
+
+
+
+
+
+
+/* Tablet */
+@media(width >= 768px){
+    /* body{
+        background-position: -190px 125px, 700px 600px;
+    } */
+    /* Header */
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Header End*/
+
+    /* My Blog Post */
+    .desktop-hidden{display: none;}
+    .desktop-visible{display: block;}
+
+    .my-blog-post{
+        position: relative;
+    }
+    
+    .omer-esin-photo{
+        margin-top: 0;
+        position: absolute;
+        top: -90px;
+        right: -20px;
+        max-width: 630px;
+        max-height: 721px;
+        z-index: -1;
+    }
+
+    .my-blog-header{
+        position: absolute;
+        top: 90px;
+        left: 0;
+    }
+
+    .my-blog-header-h1{
+        font-size: 88px;
+        letter-spacing: -2.5px;
+    }
+
+    .my-blog-text{
+        margin: 60px 500px 0 0;
+    }
+    /* My Blog Post End*/
+
+    /* Experience */
+    .experinces{
+        border-bottom: none;
+        margin-top: 700px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 7px;
+        row-gap: 52px;
+        padding-inline: 9px;
+        padding-block: 52px;
+    }
+
+    .experince{
+        text-align: left;
+    }
+
+    .experices-header{
+        font-size: 48px;
+    }
+
+    .experices-span{
+        font-size: 18px;
+    }
+    /* Experience End*/
+
+
+    /* Projects */
+    /* Projects End*/
+
+
+    /* Contact */
+
+    .contact{
+        grid-template-columns: repeat(1, 1fr);
+        /* column-gap: 220px; */
+        row-gap: 48px;
+        padding-bottom: 92px;
+
+    }
+    
+    .contact-header{
+        font-size: 72px;
+        letter-spacing: -2.05px;
+    }
+    
+    .contact-paragraph{
+        font-size: 18px;
+    }
+
+    .contact-input{
+        align-items: center;
+    }
+
+    .inpt{
+        width: 445px;
+    }
+
+    .submit-btn{
+        margin-left: 301px;
+    }
+    /* Contact End */
+}
+
+
+
+
+/* Desktop */
+@media(width >= 1200px){
+    /* Header */
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Header End*/
+
+    /* My Blog Post */
+    .desktop-hidden{display: none;}
+    .desktop-visible{display: block;}
+
+    .my-blog-post{
+        position: relative;
+    }
+    
+    .omer-esin-photo{
+        margin-top: 0;
+        position: absolute;
+        top: -90px;
+        right: 0;
+        max-width: 627px;
+        max-height: 767px;
+        z-index: -1;
+    }
+    .my-blog-header{
+        position: absolute;
+        top: 127px;
+        left: 0;
+    }
+
+    .my-blog-header-h1{
+        font-size: 88px;
+        letter-spacing: -2.5px;
+    }
+    
+    .my-blog-text{
+        margin: 43px 837px 0 0;
+    }
+
+    /* My Blog Post End*/
+
+    /* Experience */
+    .experinces{
+        margin-top: 824px;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 58px;
+        padding-inline: 5px;
+        padding-block: 78px;
+    }
+
+    .experince{
+        text-align: left;
+    }
+
+    .experices-header{
+        font-size: 48px;
+    }
+
+    .experices-span{
+        font-size: 18px;
+    }
+    /* Experience End*/
+
+
+    /* Projects */
+    /* Projects End*/
+
+
+    /* Contact */
+    .contact{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 220px;
+        padding-bottom: 92px;
+    }
+    
+    .contact-text{
+        text-align: left;
+    }
+
+    .contact-header{
+        font-size: 88px;
+        letter-spacing: -2.5px;
+    }
+
+    .contact-paragraph{
+        font-size: 18px;
+    }
+
+    .contact-input{
+        align-items: flex-start;
+    }
+
+    .inpt{
+        width: 445px;
+    }
+
+    .submit-btn{
+        margin-left: 305px;
+    }
+    /* Contact End */
+}
