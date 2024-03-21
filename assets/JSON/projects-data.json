@@ -1,0 +1,61 @@
+[
+   {
+    "title": "Social Links",
+    "photo": "assets/img/projects-img/",
+    "viewCode": "https://github.com/esmomerr/social-links",
+    "viewProjects": "",
+    "language": [
+        "HTML",
+        "CSS",
+        "JavaScript"   
+    ]
+   },
+
+   {
+    "title": "Memor Game",
+    "photo": "assets/img/projects-img",
+    "viewCode": "https://github.com/esmomerr/Memory_Game",
+    "viewProjects": "https://esmomerr.github.io/Memory_Game/",
+    "language": [
+        "HTML",
+        "CSS",
+        "JavaScript"   
+    ]
+   },
+
+   {
+    "title": "Memor Game",
+    "photo": "assets/img/projects-img",
+    "viewCode": "",
+    "viewProjects": "",
+    "language": [
+        "HTML",
+        "CSS",
+        "JavaScript"   
+    ]
+   },
+
+   {
+    "title": "Pricing Website",
+    "photo": "assets/img/projects-img",
+    "viewCode": "https://github.com/esmomerr/Pricing-WebSite-Responsive",
+    "viewProjects": "https://esmomerr.github.io/Pricing-WebSite-Responsive/",
+    "language": [
+        "HTML",
+        "CSS"   
+    ]
+   },
+
+   {
+    "title": "News",
+    "photo": "assets/img/projects-img",
+    "viewCode": "https://github.com/esmomerr/esmomer-News",
+    "viewProjects": "https://esmomerr.github.io/esmomer-News/",
+    "language": [
+        "HTML",
+        "CSS",
+        "JavaScript"   
+    ]
+   }
+   
+]
