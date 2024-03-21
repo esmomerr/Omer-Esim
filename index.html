@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ömer Esin</title>
+    <title>ÖmerEsin-Home</title>
     <link rel="stylesheet" href="assets/CSS/web-sitesi.css">
     <script src="assets/JavaScript/web-sitesi-time-difference.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,27 +14,48 @@
     <div class="container">
         <!-- Header -->
         <header class="header">
-            <h4 class="header-h4">Ömer Esin</h4>
+            <h4 class="header-h4">ÖmerEsin</h4>
 
+            <!-- desktop -->
             <ul class="items">
-                <li class="item"><a href="https://github.com/esmomerr" target="_blank"><img src="assets/img/github.svg" alt="" class="link"></a></li>
-                <li class="item"><a href="https://www.linkedin.com/in/%C3%B6mer-esim-68921a248/" target="_blank"><img src="assets/img/linkedln.svg" alt="" class="link"></a></li>
-                <li class="item"><a href="https://twitter.com/omerEsim4" target="_blank"><img src="assets/img/twitter.svg" alt="" class="link"></a></li>
+                <li class="item"><a href="index.html" class="link">Home</a></li>
+                <li class="item"><a href="projects.html" class="link">Projects</a></li>
+                <li class="item"><a href="" class="link">About</a></li>
+                <li class="item"><a href="" class="link">Contact</a></li>
             </ul>
+            <!-- desktop end -->
+
+            <!-- mobile -->
+            <img src="assets/img/menu (1).png" alt="" class="hamburger-menu"  onclick="openNav()" style="cursor:pointer">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <!-- mobile end -->
         </header>
         <!-- Header End-->
 
         <!-- My Blog Post -->
         <div class="my-blog-post">
+
+            <!-- Desktop -->
             <div class="desktop-visible my-blog-header">
                 <h1 class="my-blog-header-h1">Nice to meet you!</h1>
-                <h1 class="my-blog-header-h1">I'm Ömer Esin</h1>
+                <h1 class="my-blog-header-h1">I'm <u class="name">Ömer Esin</u></h1>
                 <p class="my-blog-text">Based in the TR, I'm a front-end developer passionate about building accessible web apps that users love.</p>
             </div>
+            <!-- Desktop End -->
+        
+            <!-- Mobile -->
             <div class="desktop-hidden my-blog-header">
-                <h1 class="my-blog-header-h1 my-blog-header-mobile">Nice to meet you I'm Ömer Esin</h1>
+                <h1 class="my-blog-header-h1 my-blog-header-mobile">Nice to meet you I'm <u class="name">Ömer Esin</u></h1>
                 <p class="my-blog-text">Based in the TR, I'm a front-end developer passionate about building accessible web apps that users love.</p>
             </div>
+            <!-- Mobile end -->
+
             <img src="assets/img/Omer-Esin-photo.jpg" alt="Omer_Esin_photo" class="omer-esin-photo">
         </div>
         <!-- My Blog Post End-->
@@ -43,27 +64,27 @@
 
         <div class="experinces">
             <div class="experince">
-                <h2 class="experices-header">HTML</h2>
+                <h2 class="experices-header"><img src="assets/img/html-5.png" alt="" class="experince-icon">HTML</h2>
                 <span class="experices-span"></span>
             </div>
             <div class="experince">
-                <h2 class="experices-header">CSS</h2>
+                <h2 class="experices-header"><img src="assets/img/css.png" alt="" class="experince-icon">CSS</h2>
                 <span class="experices-span"></span>
             </div>
             <div class="experince">
-                <h2 class="experices-header">Javascript</h2>
+                <h2 class="experices-header"><img src="assets/img/js.png" alt="" class="experince-icon">Javascript</h2>
                 <span class="experices-span"></span>
             </div>
             <div class="experince">
-                <h2 class="experices-header">React</h2>
+                <h2 class="experices-header"><img src="assets/img/react.png" alt="" class="experince-icon">React</h2>
                 <span class="experices-span">Not Started Yet</span>
             </div>
             <div class="experince">
-                <h2 class="experices-header">Anguler</h2>
+                <h2 class="experices-header"><img src="" alt="" class="experince-icon">Anguler</h2>
                 <span class="experices-span">Not Started Yet</span>
             </div>
             <div class="experince">
-                <h2 class="experices-header">SQL</h2>
+                <h2 class="experices-header"><img src="assets/img/sql-server.png" alt="" class="experince-icon">SQL</h2>
                 <span class="experices-span">Not Started Yet</span>
             </div>
         </div>
@@ -77,7 +98,6 @@
 
 
     <!-- Contact -->
-
     <div class="contact-container">
         <div class="container">
             <div class="contact">
@@ -94,9 +114,9 @@
             </div>
             
             <footer class="header">
-                <h4 class="header-h4">Ömer Esin</h4>
+                <h4 class="header-h4">ÖmerEsin</h4>
     
-                <ul class="items">
+                <ul class="items mobile-visible">
                     <li class="item"><a href="https://github.com/esmomerr" target="_blank"><img src="assets/img/github.svg" alt="" class="link"></a></li>
                     <li class="item"><a href="https://www.linkedin.com/in/%C3%B6mer-esim-68921a248/" target="_blank"><img src="assets/img/linkedln.svg" alt="" class="link"></a></li>
                     <li class="item"><a href="https://twitter.com/omerEsim4" target="_blank"><img src="assets/img/twitter.svg" alt="" class="link"></a></li>
@@ -104,7 +124,6 @@
             </footer>
         </div>
     </div>
-
     <!-- Contact End -->
 </body>
 </html>
