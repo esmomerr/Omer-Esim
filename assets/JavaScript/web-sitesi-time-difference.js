@@ -22,7 +22,7 @@ function zamanFarkiHesapla(baslangicTarihi) {
 // 'zamanFarkiniGuncelle' fonksiyonu, HTML'deki belirli elemanların içeriğini zaman farkı ile günceller.
 function zamanFarkiniGuncelle() {
     // Farklı başlangıç tarihlerini içeren bir dizi.
-    let baslangicTarihleri = ['2023-06', '2023-07', '2023-11'];
+    let baslangicTarihleri = ['2022-06', '2022-10', '2023-10'];
     // .experices-span class'ına sahip tüm elemanları seç.
     let zamanFarkiElemanlari = document.querySelectorAll('.experices-span');
 
@@ -41,3 +41,20 @@ function zamanFarkiniGuncelle() {
 
 // Sayfa tamamen yüklendiğinde 'zamanFarkiniGuncelle' fonksiyonunu çağır.
 document.addEventListener('DOMContentLoaded', zamanFarkiniGuncelle);
+
+
+
+
+
+
+
+
+// aside menu
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+// aside menu end
