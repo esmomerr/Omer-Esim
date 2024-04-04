@@ -1,7 +1,31 @@
-[
+{
+    "projects": [
+        {
+            "title": "Order Summary Component",
+            "photo": "assets/img/projects-img/order-summary-component.jpg",
+            "viewCode": "https://github.com/esmomerr/order-summary-component",
+            "viewProjects": "https://esmomerr.github.io/order-summary-component/",
+            "language": [
+                "HTML",
+                "CSS"   
+            ]
+        },
+
+    {
+        "title": "FAQs Accordion",
+        "photo": "assets/img/projects-img/faqs-accordion.jpg",
+        "viewCode": "https://github.com/esmomerr/FAQs-accordion",
+        "viewProjects": "https://esmomerr.github.io/FAQs-accordion/",
+        "language": [
+            "HTML",
+            "CSS",
+            "JavaScript"  
+        ]
+    },
+
    {
     "title": "Social Links",
-    "photo": "assets/img/projects-img/",
+    "photo": "assets/img/projects-img/social-links.jpg",
     "viewCode": "https://github.com/esmomerr/social-links",
     "viewProjects": "",
     "language": [
@@ -13,21 +37,9 @@
 
    {
     "title": "Memor Game",
-    "photo": "assets/img/projects-img",
+    "photo": "assets/img/projects-img/memory-game.jpg",
     "viewCode": "https://github.com/esmomerr/Memory_Game",
     "viewProjects": "https://esmomerr.github.io/Memory_Game/",
-    "language": [
-        "HTML",
-        "CSS",
-        "JavaScript"   
-    ]
-   },
-
-   {
-    "title": "Memor Game",
-    "photo": "assets/img/projects-img",
-    "viewCode": "",
-    "viewProjects": "",
     "language": [
         "HTML",
         "CSS",
@@ -48,7 +60,7 @@
 
    {
     "title": "News",
-    "photo": "assets/img/projects-img",
+    "photo": "assets/img/projects-img/news.jpeg",
     "viewCode": "https://github.com/esmomerr/esmomer-News",
     "viewProjects": "https://esmomerr.github.io/esmomer-News/",
     "language": [
@@ -57,5 +69,5 @@
         "JavaScript"   
     ]
    }
-   
-]
+    ]
+}
