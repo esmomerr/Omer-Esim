@@ -28,7 +28,7 @@ li{list-style-type: none;}
 .header{
     display: flex;
     /* flex-direction: column; */
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
@@ -88,7 +88,7 @@ li{list-style-type: none;}
 }
 .my-blog-header{
     position: absolute;
-    top: 350px;
+    top: 300px;
 }
 
 .my-blog-header-h1{
@@ -100,18 +100,31 @@ li{list-style-type: none;}
 
 .my-blog-text{
     display: block;
-    margin-top: 40px;
+    margin-top: 20px;
     color: #FFFFFF;
 }
 
 .my-blog-header-mobile{
     text-align: center;
 }
+
+.cv{
+    position: absolute;
+    top: 250px;
+    background-color: #4EE1A0;
+    color: #171717;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
 /* My Blog Post End*/
+
 
 /* Experience */
 .experinces{
-    margin-top: 600px;
+    margin-top: 700px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     display: grid;
@@ -154,10 +167,11 @@ li{list-style-type: none;}
 .contact{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* column-gap: 220px; */
+    column-gap: 220px;
     row-gap: 50px;
     border-bottom: 1px solid white;
     padding-bottom: 87px;
+    margin-block-start: 100px;
 }
 
 .contact-text{
@@ -195,8 +209,32 @@ li{list-style-type: none;}
 }
 
 /* inputta yanlış girildiğinde border etrafı kırmızı yanıcak */
-.inpt:invalid{
+.email:invalid{
     border-color: red;
+    background-image: url(../img/invalid.svg);
+    background-repeat: no-repeat;
+    background-position: 470px 10px;
+}
+
+.email:focus:invalid{
+    border-color: red;
+}
+.email:required:valid{
+    border-color: #4EE1A0;
+}
+
+.email:invalid{
+    border-color: red;
+    background-image: url(../img/invalid.svg);
+    background-repeat: no-repeat;
+    background-position: 470px 10px;
+}
+
+.inpt:focus:invalid{
+    border-color: red;
+}
+.inpt:required:valid{
+    border-color: #4EE1A0;
 }
 
 .message{
@@ -212,7 +250,6 @@ li{list-style-type: none;}
     font-size: 16px;
     letter-spacing: 2.29px;
     padding-bottom: 10px;
-    /* margin-left: 199px; */
 }
 
 .submit-btn:active{color: #4EE1A0;}
@@ -220,6 +257,13 @@ li{list-style-type: none;}
 
 footer{
     margin-block: 47px;
+}
+
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 /* Contact End */
 
@@ -250,7 +294,6 @@ footer{
     width: 100%;
     object-fit: cover;
 }
-
 
 .project-text{
     margin-top: 20px;
@@ -323,6 +366,8 @@ footer{
     margin-left: 50px;
   }
 /* aside menu end */
+
+
 /* Tablet */
 @media(width >= 768px){
     /* body{
@@ -390,6 +435,12 @@ footer{
     .my-blog-text{
         margin: 60px 500px 0 0;
     }
+
+    .cv{
+        top: 400px;
+        padding: 12px 32px;
+        font-size: 18px;
+    }
     /* My Blog Post End*/
 
     /* Experience */
@@ -414,23 +465,22 @@ footer{
 
     .experices-span{
         font-size: 18px;
-    }
-    /* Experience End*/
+    }Experience End
 
-    /* Contact */
+    /* Contact  */
 
     .contact{
+        margin-block-start: 150px;
         grid-template-columns: repeat(1, 1fr);
-        /* column-gap: 220px; */
         row-gap: 48px;
         padding-bottom: 92px;
 
-    }
+    } 
     
     .contact-header{
         font-size: 72px;
         letter-spacing: -2.05px;
-    }
+    } 
     
     .contact-paragraph{
         font-size: 18px;
@@ -444,9 +494,9 @@ footer{
         width: 100%;
     }
 
-    /* .submit-btn{
+    .submit-btn{
         margin-left: 301px;
-    } */
+    }
     /* Contact End */
 
 
@@ -551,6 +601,11 @@ footer{
         margin: 43px 837px 0 0;
     }
 
+    .cv{
+        top: 360px;
+        padding: 12px 32px;
+        font-size: 18px;
+    }
     /* My Blog Post End*/
 
     /* Experience */
@@ -580,35 +635,36 @@ footer{
 
     /* Contact */
     .contact{
+        margin-block-start: 200px;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 220px;
         padding-bottom: 92px;
-    }
+    } 
     
     .contact-text{
         text-align: left;
-    }
+    } 
 
     .contact-header{
         font-size: 88px;
         letter-spacing: -2.5px;
-    }
+    } 
 
     .contact-paragraph{
         font-size: 18px;
-    }
+    } 
 
     .contact-input{
         align-items: flex-end;
-    }
+    } 
 
     .inpt{
         width: 100%;
-    }
-
-    /* .submit-btn{
+    } 
+    
+    .submit-btn{
         margin-left: 370px;
-    } */
+    }
     /* Contact End */
 
 
