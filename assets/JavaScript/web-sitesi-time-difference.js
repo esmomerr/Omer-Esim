@@ -49,6 +49,16 @@ document.addEventListener('DOMContentLoaded', zamanFarkiniGuncelle);
 
 
 
+
+
+
+
+
+
+
+
+
+
 // aside menu
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -58,3 +68,92 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 // aside menu end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Footer icons
+const hoverImg = {
+    github: "assets/img/github-hover.svg",
+    linkedin: "assets/img/linkedin-hover.svg",
+    instagram: "assets/img/Instagram-hover.svg",
+    facebook: "assets/img/Facebook-hover.svg",
+    twitter: "assets/img/Twitter-hover.svg",
+
+}
+
+document.querySelectorAll(".social-link").forEach(link => {
+    link.addEventListener("mouseover", () => {
+        const socialClass = link.classList[1]; // İkinci sınıf adını al
+        const img = link.querySelector("img"); // İçerideki img etiketini seç
+        img.src = hoverImg[socialClass]; // Hover resmini belirtilen URL ile değiştir
+    });
+    
+    link.addEventListener("mouseout", () => {
+        const socialClass = link.classList[1]; // İkinci sınıf adını al
+        const img = link.querySelector("img"); // İçerideki img etiketini seç
+        img.src = `assets/img/${socialClass}.svg`; // Orijinal resmi tekrar yükle
+    });
+});
+// Footer icons End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const emailInput = document.querySelector(".email");
+
+emailInput.addEventListener("click", function(){
+    console.log(this);
+    if(this.classList.contains("invalidd")){
+        this.classList.remove("invalidd");
+        this.style.borderColor="#4EE1A0"
+        this.style.borderColor=""
+    }
+    else{
+        this.classList.add("invalidd");
+        this.style.borderColor = "red";
+        this.style.borderColor=""
+
+    }
+})
