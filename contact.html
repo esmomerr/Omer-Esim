@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÖmerEsin-contact</title>
+    <link rel="stylesheet" href="assets/CSS/web-sitesi.css">
+    <script src="assets/JavaScript/web-sitesi-time-difference.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <a href="index.html" style="color: #fff;"><h4 class="header-h4">ÖmerEsin</h4></a>
+
+            <!-- desktop -->
+            <ul class="items">
+                <li class="item"><a href="index.html" class="link">Home</a></li>
+                <li class="item"><a href="projects.html" class="link">Projects</a></li>
+                <li class="item"><a href="" class="link">About</a></li>
+                <li class="item"><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+            <!-- desktop end -->
+
+            <!-- mobile -->
+            <img src="assets/img/menu (1).png" alt="" class="hamburger-menu"  onclick="openNav()" style="cursor:pointer">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="#">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <!-- mobile end -->
+        </header>
+        <!-- Header End-->
+
+
+        <div class="contact">
+            <div class="contact-text">
+                <h1 class="contact-header">Contact</h1>
+                <p class="contact-paragraph">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+            </div>
+            <div class="contact-input">
+                <input type="text" class="text inpt" placeholder="Name" required>
+                <input type="email" class="email inpt" placeholder="E-mail" required>
+                <input type="text" class="message inpt" placeholder="Message" required>
+                <a href="" class="submit-btn">Send Message</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
