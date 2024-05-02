@@ -1,7 +1,7 @@
 const projects = document.querySelector(".projects");
 
 async function getProject(){
-    const response = await fetch("assets/JSON/projects-data.json");
+    const response = await fetch("/assets/JSON/projects-data.json");
     const data = await response.json();
     console.log(data);
     return data;
@@ -21,8 +21,9 @@ async function showProject(){
             </div>
             <!-- mobile -->
             <div class="projects-view">
-                <a href="${project.viewProjects}" class="project-view">VIEW PROJECT</a>
-                <a href="${project.viewCode}" class="project-view">VIEW CODE</a>
+                <a href="${project.viewProjects}" class="project-view" target="_blank">Projeyi Görüntele</a>
+                <a href="${project.viewCode}" class="project-view" target="_blank">Kodu Görüntele</a>
+                <a href="" class="project-view">Proje Detayları...</a>
             </div>
             <!-- mobile end -->
         </div>
