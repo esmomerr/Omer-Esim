@@ -8,10 +8,6 @@ body{
     font-family: Space Grotesk;
     background: #171717;
     color: white;
-
-    /* background-image: url(../img/ovaller.svg), url(../img/Oval.svg);
-    background-position: 325px 150px, 930px 600px;
-    background-repeat: no-repeat, no-repeat, no-repeat; */
 }
 
 a{text-decoration: none;}
@@ -27,13 +23,13 @@ li{list-style-type: none;}
 /* Header */
 .header{
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
 .header-h4{
+    font-family: Lugrasimo;
     font-weight: 700;
     font-size: 32px;
 }
@@ -79,9 +75,18 @@ li{list-style-type: none;}
     max-height: 600px;
     top: -150px;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.1;
+    border-radius: 1px;
+
+    animation: a1 2s infinite ease-in-out alternate-reverse;
 }
 
+@keyframes a1{
+    to{
+        opacity: 0.8;
+        border-radius: 20px;
+    }
+}
 .opacity{
     position: absolute;
     top: -150px;
@@ -95,7 +100,6 @@ li{list-style-type: none;}
     font-weight: 700;
     font-size: 40px;
     letter-spacing: -2.05px;
-
 }
 
 .my-blog-text{
@@ -160,9 +164,7 @@ li{list-style-type: none;}
 /* Experience End*/
 
 /* Contact */
-.contact-container{
-    background: #242424;
-}
+
 
 .contact{
     display: grid;
@@ -211,9 +213,6 @@ li{list-style-type: none;}
 /* inputta yanlış girildiğinde border etrafı kırmızı yanıcak */
 .email:invalid{
     border-color: red;
-    background-image: url(../img/invalid.svg);
-    background-repeat: no-repeat;
-    background-position: 470px 10px;
 }
 
 .email:focus:invalid{
@@ -223,12 +222,6 @@ li{list-style-type: none;}
     border-color: #4EE1A0;
 }
 
-.email:invalid{
-    border-color: red;
-    background-image: url(../img/invalid.svg);
-    background-repeat: no-repeat;
-    background-position: 470px 10px;
-}
 
 .inpt:focus:invalid{
     border-color: red;
@@ -255,9 +248,6 @@ li{list-style-type: none;}
 .submit-btn:active{color: #4EE1A0;}
 .submit-btn:hover{color: #4EE1A0;}
 
-footer{
-    margin-block: 47px;
-}
 
 
 .social-links{
@@ -267,6 +257,34 @@ footer{
 }
 /* Contact End */
 
+/* Footer */
+footer{
+    margin-block-start: 47px;
+}
+
+.footer-header{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.footer-container{
+    background: #242424;
+}
+
+.copy-span{
+    text-align: center;
+    margin-top: 32px;
+}
+/* Footer End */
 
 
 
@@ -323,11 +341,79 @@ footer{
 }
 .project-view{
     color: #D9D9D9;
+    transition: color 0.5s ease-out;
 }
 .project-view:hover{color: #4EE1A0;}
-
 /* Projects HTML End*/
 
+/* About HTML */
+.about-container{
+    background-image: url(../img/about-background.jpg);
+    background-repeat: no-repeat;
+}
+
+.about{
+    padding: 10px;
+    max-width: 500px;
+}
+
+.about-header{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.about-paragraph{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* .about-text{
+    width: 50%;
+    object-fit: cover;
+} */
+
+.about-1{
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    align-items: center;
+    margin-block-start: 100px;
+}
+
+.about-photo{
+    max-width: 350px;
+    object-fit: cover;
+}
+
+.about-2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 52px;
+    margin-block-start: 100px;
+}
+
+.about-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+    margin-block-start: 100px;
+}
+
+.about-sertivica{
+    background-color: #2C343E;
+    margin-block-end: 20px;
+}
+
+.about-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+}
+
+/* About HTML End*/
 
 
 /* aside menu */
@@ -337,7 +423,6 @@ footer{
     position: fixed;
     z-index: 1;
     top: 0;
-    /* left: 510px; */
     right: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -351,7 +436,7 @@ footer{
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: color 0.3s ease-in;
   }
   
   .sidenav a:hover {
@@ -370,9 +455,6 @@ footer{
 
 /* Tablet */
 @media(width >= 768px){
-    /* body{
-        background-position: -190px 125px, 700px 600px;
-    } */
     /* Header */
     .header{
         flex-direction: row;
@@ -465,7 +547,8 @@ footer{
 
     .experices-span{
         font-size: 18px;
-    }Experience End
+    }
+    /* Experience End */
 
     /* Contact  */
 
@@ -499,6 +582,11 @@ footer{
     }
     /* Contact End */
 
+    /* Footer */
+    #footer-links{
+        flex-direction: row;
+    }
+    /* Footer End */
 
 
 
@@ -532,6 +620,41 @@ footer{
     }
     .project-view{display: block;}
     /* Projects HTML End*/
+
+    /* About HTML*/
+    .about{
+        padding: 50px;
+    }
+    
+    .about-header{
+        font-size: 72px;
+    }
+
+    .about-paragraph{
+        font-size: 18px;
+    }
+
+    .about-1{
+        flex-direction: row;
+    }
+
+    .about-photo{
+        max-width: 417px;
+        object-fit: cover;
+    }
+
+    .about-2{
+        flex-direction: row-reverse;
+    }
+
+    .about-3{
+        flex-direction: row;
+    }
+
+    .about-4{
+        flex-direction: row-reverse;
+    }
+    /* About HTML End*/
 }
 
 
@@ -667,7 +790,11 @@ footer{
     }
     /* Contact End */
 
-
+    /* Footer */
+    #footer-links{
+        flex-direction: row;
+    }
+    /* Footer End */
 
 
 
@@ -722,6 +849,44 @@ footer{
     .project:hover .projects-view {
         opacity: 1;
     }
-
     /* Projects HTML End*/
+
+    /* About */
+    .about{
+        padding: 50px;
+    }
+    
+    .about-header{
+        font-size: 88px;
+    }
+
+    .about-paragraph{
+        font-size: 18px;
+    }
+
+    .about-1{
+        flex-direction: row;
+        margin-block-start: 200px;
+
+    } 
+
+    .about-photo{
+        max-width: 517px;
+        object-fit: cover;
+    }
+
+    .about-2{
+        flex-direction: row-reverse;
+        margin-block-start: 200px;
+    }
+
+    .about-3{
+        flex-direction: row;
+        margin-block-start: 200px;
+    }
+
+    .about-4{
+        flex-direction: row-reverse;
+    }
+    /* About End*/
 }
