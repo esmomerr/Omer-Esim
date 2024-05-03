@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "Order Summary Component",
-            "photo": "assets/img/projects-img/order-summary-component.jpg",
+            "photo": "assets/img/projects-img/order-summary-component.JPG",
             "viewCode": "https://github.com/esmomerr/order-summary-component",
             "viewProjects": "https://esmomerr.github.io/order-summary-component/",
             "language": [
@@ -13,7 +13,7 @@
 
     {
         "title": "FAQs Accordion",
-        "photo": "assets/img/projects-img/faqs-accordion.jpg",
+        "photo": "assets/img/projects-img/faqs-accordion.JPG",
         "viewCode": "https://github.com/esmomerr/FAQs-accordion",
         "viewProjects": "https://esmomerr.github.io/FAQs-accordion/",
         "language": [
