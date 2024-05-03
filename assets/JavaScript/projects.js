@@ -1,7 +1,7 @@
 const projects = document.querySelector(".projects");
 
 async function getProject(){
-    const response = await fetch("/assets/JSON/projects-data.json");
+    const response = await fetch("assets/JSON/projects-data.json");
     const data = await response.json();
     console.log(data);
     return data;
