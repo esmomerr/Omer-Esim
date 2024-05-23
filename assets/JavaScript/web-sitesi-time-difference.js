@@ -22,7 +22,7 @@ function zamanFarkiHesapla(baslangicTarihi) {
 // 'zamanFarkiniGuncelle' fonksiyonu, HTML'deki belirli elemanların içeriğini zaman farkı ile günceller.
 function zamanFarkiniGuncelle() {
     // Farklı başlangıç tarihlerini içeren bir dizi.
-    let baslangicTarihleri = ['2022-06', '2022-10', '2023-10'];
+    let baslangicTarihleri = ['2022-06', '2022-10', '2023-10', '2024-05', '2024-04', '2023-11'];
     // .experices-span class'ına sahip tüm elemanları seç.
     let zamanFarkiElemanlari = document.querySelectorAll('.experices-span');
 

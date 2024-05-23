@@ -347,37 +347,12 @@ footer{
 /* Projects HTML End*/
 
 /* About HTML */
-.about-container{
-    background-image: url(../img/about-background.jpg);
-    background-repeat: no-repeat;
-}
-
-.about{
-    padding: 10px;
-    max-width: 500px;
-}
-
-.about-header{
-    font-weight: 700;
-    font-size: 40px;
-}
-
-.about-paragraph{
-    font-weight: 500;
-    font-size: 16px;
-}
-
-/* .about-text{
-    width: 50%;
-    object-fit: cover;
-} */
 
 .about-1{
     display: flex;
     flex-direction: column;
     gap: 52px;
     align-items: center;
-    margin-block-start: 100px;
 }
 
 .about-photo{
@@ -622,17 +597,6 @@ footer{
     /* Projects HTML End*/
 
     /* About HTML*/
-    .about{
-        padding: 50px;
-    }
-    
-    .about-header{
-        font-size: 72px;
-    }
-
-    .about-paragraph{
-        font-size: 18px;
-    }
 
     .about-1{
         flex-direction: row;
@@ -852,22 +816,9 @@ footer{
     /* Projects HTML End*/
 
     /* About */
-    .about{
-        padding: 50px;
-    }
-    
-    .about-header{
-        font-size: 88px;
-    }
-
-    .about-paragraph{
-        font-size: 18px;
-    }
 
     .about-1{
         flex-direction: row;
-        margin-block-start: 200px;
-
     } 
 
     .about-photo{
