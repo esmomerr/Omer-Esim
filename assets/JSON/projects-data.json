@@ -26,8 +26,8 @@
    {
     "title": "Social Links",
     "photo": "assets/img/projects-img/social-links.jpg",
-    "viewCode": "https://github.com/esmomerr/social-links",
-    "viewProjects": "",
+    "viewCode": "https://github.com/esmomerr/Social-Links",
+    "viewProjects": "https://esmomerr.github.io/Social-Links/",
     "language": [
         "HTML",
         "CSS",
@@ -56,18 +56,8 @@
         "HTML",
         "CSS"   
     ]
-   },
-
-   {
-    "title": "News",
-    "photo": "assets/img/projects-img/news.jpeg",
-    "viewCode": "https://github.com/esmomerr/esmomer-News",
-    "viewProjects": "https://esmomerr.github.io/esmomer-News/",
-    "language": [
-        "HTML",
-        "CSS",
-        "JavaScript"   
-    ]
    }
+
+   
     ]
 }
